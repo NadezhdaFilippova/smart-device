@@ -1,0 +1,87 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 56.8%;
+  line-height: 18px;
+
+  @include vp-1023 {
+    width: 100%;
+  }
+}
+
+.contacts a {
+  display: flex;
+  padding: 10px;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    margin-right: 18px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    padding: 7px 13px;
+  }
+}
+
+.contacts__link span {
+  align-self: center;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.contacts__link svg {
+  margin-right: 15px;
+  fill: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+}
+
+.contacts__link:hover {
+  @include hover {
+    background-color: $color-alice-blue;
+    border-radius: 3px;
+    color: $color-deep-sky-blue;
+  }
+
+  @include vp-1023 {
+    @include hover-focus {
+      background-color: $color-transparent;
+      color: $color-alice-blue;
+
+      &.focus-visible:focus {
+        background-color: $color-transparent;
+        color: $color-alice-blue;
+        outline: none;
+      }
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contacts__link:focus {
+  @include focus {
+    background-color: $color-alice-blue;
+    border-radius: 3px;
+    color: $color-deep-sky-blue;
+    outline: 3px solid $color-deep-sky-blue;
+  }
+}
+
+.contacts__link:active {
+  background-color: $color-black-pearl;
+  outline: none;
+  color: $color-alice-blue;
+}
+
+.contacts__link:active svg {
+  fill: $color-alice-blue;
+}

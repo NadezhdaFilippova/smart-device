@@ -18,9 +18,25 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
 @import "blocks/modal";
-
+@import "blocks/main-logo.scss";
+@import "blocks/main-header.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/about.scss";
+@import "blocks/services.scss";
+@import "blocks/consult.scss";
+@import "blocks/consult-form.scss";
+@import "blocks/control-consent.scss";
+@import "blocks/footer-nav.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social";
+@import "blocks/foooter-contacts.scss";
+@import "blocks/modal-form.scss";
+@import "blocks/head-container.scss";
+@import "blocks/accordion.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
@@ -61,6 +77,7 @@
 */
 // и для active
 /*@mixin active {
+
     &.focus-visible:active {
       @content;
     }

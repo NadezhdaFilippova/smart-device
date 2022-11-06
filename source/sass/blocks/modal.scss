@@ -61,8 +61,8 @@
 
     width: 600px;
     padding: 40px;
-
-    background-color: $color-default-white;
+    color: $color-default-white;
+    background-color: $color-deep-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -83,6 +83,28 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+  }
+
+  &__close-btn::before {
+    position: absolute;
+    width: 28px;
+    height: 1.5px;
+    top: 19px;
+    right: 6px;
+    background-color: $color-default-white;
+    transform: rotate(45deg);
+    content: "";
+  }
+
+  &__close-btn::after {
+    position: absolute;
+    width: 28px;
+    height: 1.5px;
+    top: 19px;
+    right: 6px;
+    background-color: $color-default-white;
+    transform: rotate(-45deg);
+    content: "";
   }
 
   &--responsive {
@@ -116,4 +138,22 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__content h2 {
+  display: block;
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $ff-titles;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal__content p {
+  display: block;
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 40px;
 }

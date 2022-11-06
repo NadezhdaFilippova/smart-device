@@ -44,11 +44,11 @@
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
-}
+// @mixin vp-1439 {
+//   @media (max-width: ($vp-1440 - 1px)) {
+//     @content;
+//   }
+// }
 
 @mixin vp-1279 {
   @media (max-width: ($vp-1280 - 1px)) {
@@ -57,13 +57,13 @@
 }
 
 @mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
+  @media (max-width: ($vp-1024 - 0.5px)) {
     @content;
   }
 }
 
 @mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
+  @media (max-width: ($vp-768 - 0.5px)) {
     @content;
   }
 }
@@ -73,6 +73,12 @@
     @content;
   }
 }
+
+// @mixin vp-320 {
+//   @media (max-width: ($vp-320 - 1px)) {
+//     @content;
+//   }
+// }
 
 // Mobile first
 
@@ -116,3 +122,4 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+

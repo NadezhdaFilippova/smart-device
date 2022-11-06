@@ -1,0 +1,64 @@
+.control-consent {
+  width: 45%;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.control-consent > input[type="checkbox"] {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.control-consent__label {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.control-consent > input[type="checkbox"] + .control-consent__label::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.control-consent > input[type="checkbox"]:checked + .control-consent__label::after {
+  position: absolute;
+  top: 25%;
+  left: -1%;
+  width: 18px;
+  height: 14px;
+  background: $color-default-white;
+  clip-path: polygon(26% 40%, 52% 71%, 83% 26%, 87% 31%, 52% 82%, 20% 44%);
+  content: "";
+}
+
+.control-consent:hover > input[type="checkbox"] + .control-consent__label::before {
+  border: 2px solid $color-default-white;
+}
+
+.control-consent:focus > input[type="checkbox"] + .control-consent__label::before {
+  outline: 2px solid $color-default-white;
+}

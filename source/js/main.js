@@ -1,5 +1,10 @@
-import {iosVhFix} from './utils/ios-vh-fix';
+// import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {scrollButtonClick} from './modules/modals/scroll-to-form';
+import './modules/modals/about-spoiler';
+import {closeOpenedAccordions} from './modules/modals/accordion';
+import './modules/tel-validate';
+import {onOpenModal} from './modules/modals/modal-call';
 
 // ---------------------------------
 
@@ -7,10 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
-  iosVhFix();
+  // iosVhFix();
 
   // Modules
+  scrollButtonClick();
+  // onSpoilerButtonClick();
+  closeOpenedAccordions();
+  onOpenModal();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

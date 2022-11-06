@@ -1,0 +1,20 @@
+.main-logo {
+  max-width: 215px;
+  align-self: center;
+}
+
+.main-logo__img {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-logo__img--mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+}

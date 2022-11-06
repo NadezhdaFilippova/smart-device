@@ -1,0 +1,105 @@
+.social {
+  display: flex;
+
+  @include vp-1023 {
+    width: 22.4%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.social__list {
+  margin: 0;
+  margin-left: 14px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  @include vp-1023 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: 12px;
+  }
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.social__link svg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: #f8fdff;
+}
+
+.social__link:hover svg {
+  @include hover {
+    fill: $color-deep-sky-blue;
+  }
+
+  @include vp-1023 {
+    @include hover-focus {
+
+      fill: #f8fdff;
+
+      &.focus-visible:focus {
+        fill: #f8fdff;
+      }
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social__link:focus {
+  @include hover {
+    outline: 1px solid $color-alice-blue;
+  }
+}
+
+.social__link:active {
+  @include hover {
+    outline: 2px solid $color-alice-blue;
+  }
+}
+
+.social__link:active svg {
+  fill: $color-alice-blue;
+}
+
+.social__link--pinterest svg {
+  width: 31px;
+  height: 31px;
+  fill: #f8fdff;
+
+  @include vp-1023 {
+    left: 11px;
+  }
+}

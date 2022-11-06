@@ -1,0 +1,31 @@
+.head-container {
+  background-image: url("../img/main-back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  @include retina {
+    @media (min-width: 1024px) {
+      background-image: url("../img/main-back-desktop@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/main-back-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/main-back-tablet@2x.jpg");
+    }
+  }
+
+
+  @include vp-767 {
+    background-image: url("../img/main-back-mobile.jpg");
+
+    @include retina {
+
+      background-image: url("../img/main-back-mobile@2x.jpg");
+    }
+  }
+}

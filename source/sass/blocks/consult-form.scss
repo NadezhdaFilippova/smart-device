@@ -1,0 +1,175 @@
+.consult-form {
+  width: 100%;
+}
+
+.consult-form__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.consult-form__item {
+  width: 46%;
+
+  @include vp-1023 {
+    width: 47.8%;
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.consult-form__item input {
+  width: 100%;
+  padding: 15px;
+  color: $color-default-white;
+  border: none;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+
+  @include vp-767 {
+    padding: 16px;
+  }
+}
+
+.consult-form__item input::placeholder,
+.consult-form textarea::placeholder {
+  font-family: $ff-main;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.consult-form textarea {
+  width: 100%;
+  height: 155px;
+  margin-bottom: 33px;
+  padding: 25px 15px;
+  color: $color-default-white;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+
+  @include vp-1023 {
+    width: 100%;
+    padding: 29px 15px;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    padding: 23px 15px;
+    margin-bottom: 25px;
+    height: 180px;
+  }
+}
+
+.consult-form__item input:hover,
+.consult-form textarea:hover {
+  @include hover {
+    opacity: 0.6;
+  }
+}
+
+.consult-form__item input:focus,
+.consult-form textarea:focus {
+  opacity: 0.6;
+  outline: 2px solid $color-alice-blue;
+  color: $color-default-white;
+}
+
+.consult-form__item input:active,
+.consult-form textarea:active {
+  background-color: $color-black-pearl;
+  outline: 2px solid $color-default-white;
+}
+
+.consult-form__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.consult-form__btn {
+  width: 265px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  padding: 13px 25px;
+  font-family: $ff-titles;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @include vp-1023 {
+    margin-right: 84px;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+}
+
+.consult-form__btn:hover {
+  @include hover {
+    background-color: $color-alice-blue;
+    color: $color-black-pearl;
+  }
+
+  @include vp-1023 {
+    @include hover-focus {
+      background-color: $color-black-pearl;
+      color: $color-default-white;
+
+      &.focus-visible:focus {
+        background-color: $color-black-pearl;
+        color: $color-default-white;
+        outline: none;
+      }
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.consult-form__btn:focus {
+  @include focus {
+    background-color: $color-alice-blue;
+    color: $color-black-pearl;
+    outline: 3px solid $color-black-pearl;
+  }
+}
+
+.consult-form__btn:active {
+  background-color: $color-deep-sky-blue;
+  color: $color-black-pearl;
+  outline: 3px solid $color-alice-blue;
+}

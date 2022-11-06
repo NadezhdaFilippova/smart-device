@@ -1,0 +1,51 @@
+.modal-form {
+  width: 100%;
+}
+
+.modal-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modal-form__item input,
+.modal-form__item textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: $color-default-white;
+  border: none;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+}
+
+.modal-form__item textarea {
+  padding: 25px 15px;
+  margin-bottom: 35px;
+  height: 155px;
+}
+
+.modal-form__item input::placeholder,
+.modal-form textarea::placeholder {
+  font-family: $ff-titles;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.modal-form__btn {
+  width: 100%;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  font-family: $ff-titles;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+  border: none;
+  border-radius: 3px;
+}
