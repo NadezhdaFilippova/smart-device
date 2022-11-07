@@ -33,6 +33,26 @@
   color: $color-default-white;
 }
 
+.modal-form__item input:hover,
+.modal-form textarea:hover {
+  @include hover {
+    opacity: 0.6;
+  }
+}
+
+.modal-form__item input:focus,
+.modal-form textarea:focus {
+  opacity: 0.6;
+  outline: 2px solid $color-alice-blue;
+  color: $color-default-white;
+}
+
+.modal-form__item input:active,
+.modal-form textarea:active {
+  background-color: $color-black-pearl;
+  outline: 2px solid $color-default-white;
+}
+
 .modal-form__btn {
   width: 100%;
   padding: 13px 25px;
@@ -48,4 +68,52 @@
   background-color: $color-black-pearl;
   border: none;
   border-radius: 3px;
+}
+
+.modal-form__btn:hover {
+  @include hover {
+    background-color: $color-alice-blue;
+    color: $color-black-pearl;
+  }
+
+  @include vp-1023 {
+    @include hover-focus {
+      background-color: $color-black-pearl;
+      color: $color-default-white;
+
+      &.focus-visible:focus {
+        background-color: $color-black-pearl;
+        color: $color-default-white;
+        outline: none;
+      }
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.modal-form__btn:focus {
+  @include focus {
+    background-color: $color-alice-blue;
+    color: $color-black-pearl;
+    outline: 3px solid $color-black-pearl;
+  }
+}
+
+.modal-form__btn:active {
+  background-color: $color-deep-sky-blue;
+  color: $color-black-pearl;
+  outline: 3px solid $color-alice-blue;
+}
+
+.modal-form__control-consent > input[type="checkbox"] + .control-consent__label::before {
+  top: 0;
+  // left: 0.5%;
+}
+
+.modal-form__control-consent > input[type="checkbox"]:checked + .control-consent__label::after {
+  top: 0;
+  left: -0.5%;
 }

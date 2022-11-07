@@ -1,10 +1,9 @@
 // import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {scrollButtonClick} from './modules/modals/scroll-to-form';
-import './modules/modals/about-spoiler';
-import {closeOpenedAccordions} from './modules/modals/accordion';
-import './modules/tel-validate';
-import {onOpenModal} from './modules/modals/modal-call';
+import {initScrollToForm} from './modules/scroll-to-form';
+import {initSpoiler} from './modules/about-spoiler';
+import {closeOpenedAccordions} from './modules/accordion';
+import {setPhoneMak} from './modules/tel-validate';
 
 // ---------------------------------
 
@@ -15,10 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // iosVhFix();
 
   // Modules
-  scrollButtonClick();
-  // onSpoilerButtonClick();
+  initScrollToForm();
+  initSpoiler();
   closeOpenedAccordions();
-  onOpenModal();
+  setPhoneMak();
 
   // ---------------------------------
 

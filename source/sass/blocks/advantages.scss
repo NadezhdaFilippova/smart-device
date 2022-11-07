@@ -47,9 +47,7 @@
 
 .advantages__item {
   min-height: 300px;
-  padding-top: 40px;
-  padding-left: 45px;
-  padding-bottom: 52px;
+  padding: 40px 45px 52px;
   border: 1px solid #ebebeb;
   border-left: 5px solid $color-deep-sky-blue;
   cursor: pointer;
@@ -85,17 +83,12 @@
     &.focus-visible:focus {
       background-color: $color-transparent;
 
-      svg {
-        fill: $color-deep-sky-blue;
+      @include hover-focus {
+        opacity: 1;
       }
     }
   }
-
-  @include hover-focus {
-    opacity: 1;
-  }
 }
-
 
 .advantages__item svg {
   fill: $color-deep-sky-blue;
@@ -107,9 +100,7 @@
 }
 
 .advantages__item:hover svg {
-  @include hover {
-    fill: $color-alice-blue;
-  }
+  fill: $color-alice-blue;
 
   @include vp-1023 {
     @include hover-focus {

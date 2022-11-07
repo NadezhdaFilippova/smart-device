@@ -21,11 +21,10 @@
           <div class="main-header__container container">
             <div class="main-header__wrapper">
               <a class="main-header__logo main-logo">
-
-                <img class="main-logo__img" src="img/svg/logo-full.svg" width="215" height="55"
-                  alt="Лoготип Smart Device">
-                <img class="main-logo__img main-logo__img--mobile" src="img/svg/logo-shortcut.svg" width="55"
-                  height="55" alt="Лoготип Smart Device, похожий на мозг из проводов.">
+                <div class="main-logo__img-wrapper">
+                  <img class="main-logo__img" src="img/svg/logo-full.svg" width="215" height="55"
+                    alt="Лoготип Smart Device, , похожий на мозг из проводов.">
+                </div>
               </a>
               <nav class="main-nav main-header__nav">
                 <div class="main-nav__contacts contacts">
@@ -58,7 +57,8 @@
           <a class="intro__consult-btn intro__consult-btn--desktop" href="#form" data-scroll-to-form>Получить
             бесплатную
             консультацию</a>
-          <a class="intro__consult-btn intro__consult-btn--mobile" href="#form" data-scroll-to-form>Бесплатная консультация</a>
+          <a class="intro__consult-btn intro__consult-btn--mobile" href="#form" data-scroll-to-form>Бесплатная
+            консультация</a>
         </div>
       </section>
     </div>
@@ -111,15 +111,13 @@
         <div class="about__wrapper">
           <picture>
             <source type="image/webp" srcset="img/numbers2022.webp 1x, img/numbers2022@2x.webp 2x">
-            </picture>
-          <img class="about__img" src="img/numbers2022.png" width="150" height="320" alt="2022год.">
-
+            <img class="about__img" src="img/numbers2022.png" srcset="img/numbers2022@2x.png 2x" width="150"
+              height="320" alt="Цифры 2022.">
+          </picture>
           <article>
             <h2>О компании</h2>
-
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
               1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-
             <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.<span
                 class="about__hidden-mobile" data-spoiler-mobile>
                 Печатные
@@ -148,51 +146,54 @@
           <ul class="services__list">
             <li class="services__item">
               <a class="services__link" href="#">
-                <img class="services__img services__img--desktop" src="img/service-back1.jpg" width="350" height="650"
-                  alt="Детали печатных плат.">
-                <img class="services__img services__img--tablet" src="img/service-back1-tablet.jpg" width="670"
-                  height="250" alt="Детали печатных плат.">
+                <div class="services__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/service-back1.webp 1x, img/service-back1@2x.webp 2x">
 
-                <img class="services__img services__img--mobile" src="img/service-back1-mobile.jpg" width="270"
-                  height="250" alt="Детали печатных плат.">
+                    <img class="services__img" src="img/service-back1.jpg" srcset="img/service-back1@2x.jpg 2x"
+                      width="350" height="650" alt="Детали печатных плат.">
+                  </picture>
+                </div>
                 <h3>Производство печатных&nbsp;плат</h3>
-
               </a>
             </li>
             <li class="services__item">
               <a class="services__link" href="#">
-                <img class="services__img services__img--desktop" src="img/service-back2.jpg" width="350" height="650"
-                  alt="Детали печатных плат.">
-                <img class="services__img services__img--tablet" src="img/service-back2-tablet.jpg" width="670"
-                  height="250" alt="Детали печатных плат.">
+                <div class="services__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/service-back2.webp 1x, img/service-back2@2x.webp 2x">
 
-                <img class="services__img services__img--mobile" src="img/service-back2-mobile.jpg" width="270"
-                  height="250" alt="Детали печатных плат.">
+                    <img class="services__img" src="img/service-back2.jpg" srcset="img/service-back2@2x.jpg 2x"
+                      width="350" height="650" alt="Детали печатных плат.">
+                  </picture>
+                </div>
                 <h3>Монтаж печатных&nbsp;плат</h3>
-
               </a>
-
             </li>
             <li class="services__item">
               <a class="services__link" href="#">
-                <img class="services__img services__img--desktop" src="img/service-back3.jpg" width="350" height="650"
-                  alt="Детали светотехники.">
-                <img class="services__img services__img--tablet" src="img/service-back3-tablet.jpg" width="670"
-                  height="250" alt="Детали печатных плат.">
-
-                <img class="services__img services__img--mobile" src="img/service-back3-mobile.jpg" width="270"
-                  height="250" alt="Детали печатных плат.">
+                <div class="services__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/service-back3.webp 1x, img/service-back3@2x.webp 2x">
+                    <img class="services__img" src="img/service-back3.jpg" srcset="img/service-back3@2x.jpg 2x"
+                      width="350" height="650" alt="Детали светотехники.">
+                  </picture>
+                </div>
                 <h3>Комплектующие для&nbsp;светотехники</h3>
-
               </a>
-
             </li>
           </ul>
         </div>
       </section>
       <section class="consult" id="scroll">
         <div class="consult__wrapper container" id="form" data-form>
-          <img class="consult__img" src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
+          <div class="consult__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
+              <img class="consult__img" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510"
+                height="285" alt="Бумажный самолетик.">
+            </picture>
+          </div>
           <div class="consult__form-wrapper">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p> Мы проконсультируем Вас бесплатно</p>
@@ -200,11 +201,13 @@
               <ul class="consult-form__list">
                 <li class="consult-form__item">
                   <label for="user-name" class="visually-hidden">Имя.</label>
-                  <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
+                  <input type="text" name="user-name" id="user-name" placeholder="Имя" minlength="1" maxlength="25"
+                    required>
                 </li>
                 <li class="consult-form__item">
                   <label class="visually-hidden">Телефон.</label>
-                  <input type="tel" name="user-phone" placeholder="Телефон" maxlength="18" data-tel-input required>
+                  <input type="tel" name="user-phone" placeholder="Телефон" minlength="17" maxlength="17" title="Используйте формат +7(999) 999-99-99" data-tel-input
+                    required>
                 </li>
               </ul>
               <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
@@ -225,7 +228,7 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo-block">
             <a class="main-footer__logo main-logo" href="#">
-              <img class="main-logo__img" src="img/svg/logo-full.svg" width="215" height="55"
+              <img class="main-footer__img" src="img/svg/logo-full.svg" width="215" height="55"
                 alt="Лoготип Smart Device">
             </a>
             <div class="main-footer__social social">
@@ -259,8 +262,8 @@
             </div>
           </div>
           <div class="main-footer__container">
-            <div class="main-footer__nav footer-nav" >
-              <div class="footer-nav__wrapper  accordion__item accordion accordion--open" data-accordion>
+            <div class="main-footer__nav footer-nav">
+              <div class="footer-nav__wrapper accordion is-active" data-accordion>
                 <div class="accordion__header">
                   <h3>Разделы сайта</h3>
                 </div>
@@ -292,7 +295,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="main-footer__contacts footer-contacts accordion__item accordion__item--noborder-top accordion accordion--open "
+              <div class="main-footer__contacts footer-contacts accordion accordion--noborder-top  is-active "
                 data-accordion>
                 <div class="accordion__header ">
                   <h3>Наш офис</h3>
@@ -303,14 +306,21 @@
                       <address>г. Мытищи, Олимпийский проспект, д.10</address>
                     </div>
                     <div class="footer-contacts__phone phone">
-                      <a class="phone__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                      <a class="phone__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                      <a class="phone__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                      <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item">
+                          <a class="phone__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                        </li>
+                        <li class="footer-contacts__item">
+                          <a class="phone__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                        </li>
+                        <li class="footer-contacts__item">
+                          <a class="phone__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -329,12 +339,11 @@
             <ul class="modal-form__list">
               <li class="modal-form__item">
                 <label for="user-name-modal" class="visually-hidden">Имя.</label>
-                <input type="text" name="user-name-modal" id="user-name-modal" placeholder="Имя" data-name-modal
-                  required>
+                <input type="text" name="user-name-modal" id="user-name-modal" placeholder="Имя" maxlength="25" data-focus required>
               </li>
               <li class="modal-form__item">
                 <label class="visually-hidden">Телефон.</label>
-                <input type="tel" name="user-phone-modal" placeholder="Телефон" maxlength="18" data-tel-input required>
+                <input type="tel" name="user-phone-modal" placeholder="Телефон" minlength="17" maxlength="17" title="Используйте формат +7(999) 999-99-99" data-tel-input required>
               </li>
               <li class="modal-form__item">
                 <textarea name="question" id="question-modal" placeholder="Ваш вопрос"></textarea>
@@ -342,7 +351,7 @@
             </ul>
             <div class="modal-form__footer">
               <button class="modal-form__btn button" type="submit">отправить</button>
-              <label class="modal-form__control control-consent">
+              <label class="modal-form__control modal-form__control-consent control-consent">
                 <input type="checkbox" name="consent-personal" value="consent" checked>
                 <span class="control-consent__label">Я согласен на обработку персональных данных</span>
               </label>

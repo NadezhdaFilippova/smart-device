@@ -56,9 +56,10 @@
 }
 
 .control-consent:hover > input[type="checkbox"] + .control-consent__label::before {
-  border: 2px solid $color-default-white;
+  border: 2px solid $color-black-pearl;
 }
 
 .control-consent:focus > input[type="checkbox"] + .control-consent__label::before {
-  outline: 2px solid $color-default-white;
+  outline: 2px solid $color-black-pearl;
+  border: 1px solid $color-black-pearl;
 }
