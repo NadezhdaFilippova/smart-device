@@ -1,8 +1,9 @@
 const accordions = document.querySelectorAll('[data-accordion]');
 
 const closeOpenedAccordions = () => {
-  document.querySelector('.footer-nav__wrapper').classList.remove('is-active');
-  document.querySelector('.footer-contacts').classList.remove('is-active');
+  accordions.forEach((accordion) => {
+    accordion.classList.remove('is-active');
+  });
 };
 
 const checkOnOpenedAccordion = () => {

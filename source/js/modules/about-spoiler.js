@@ -3,7 +3,7 @@ const spoilerContent = document.querySelector('[data-spoiler]');
 const spoilerContentMobile = document.querySelector('[data-spoiler-mobile]');
 
 const initSpoiler = () => {
-
+  if (spoilerContent) {
   const onSpoilerButtonClick = () => {
     spoilerContentMobile.classList.toggle('is-shown');
     spoilerContent.classList.toggle('is-shown');
@@ -15,6 +15,7 @@ const initSpoiler = () => {
   };
 
   spoilerButton.addEventListener('click', onSpoilerButtonClick);
+}
 };
 
 export {initSpoiler};
