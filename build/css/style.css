@@ -385,14 +385,6 @@ template {
 }
 
 @font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "";
-  font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
-}
-
-@font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
@@ -585,14 +577,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -623,13 +607,6 @@ button,
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
 }
 
 .container {
@@ -1025,25 +1002,17 @@ button,
   cursor: pointer;
 }
 
-.advantages__item svg {
-  fill: #00b2ff;
-}
-
-.advantages__item:hover svg {
-  fill: #f2f5f7;
-}
-
-.advantages__item:hover svg.focus-visible:focus {
-  opacity: 1;
-}
-
-.advantages__title {
+.advantages__item h3 {
   margin: 10px 0 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
   color: #00b2ff;
+}
+
+.advantages__item svg {
+  fill: #00b2ff;
 }
 
 .about__wrapper {
@@ -1609,6 +1578,14 @@ button,
   fill: #f8fdff;
 }
 
+.social__link:focus.focus-visible:focus {
+  outline: 1px solid #f2f5f7;
+}
+
+.social__link:active {
+  outline: 2px solid #f2f5f7;
+}
+
 .social__link:active svg {
   fill: #f2f5f7;
 }
@@ -1970,24 +1947,19 @@ button,
     padding: 40px 44px 15px 40px;
   }
 
-  .advantages__item:hover.focus-visible:focus {
-    background-color: rgba(255, 255, 255, 0);
+  .advantages__item:hover h3.focus-visible:focus,
+  .advantages__item:hover p.focus-visible:focus {
+    color: #041827;
   }
 
-  .advantages__item:hover.focus-visible:focus {
-    background-color: rgba(255, 255, 255, 0);
+  .advantages__item:hover h3.focus-visible:focus,
+  .advantages__item:hover p.focus-visible:focus {
+    color: #041827;
   }
 
-  .advantages__item:hover.focus-visible:focus.focus-visible:focus {
-    opacity: 1;
-  }
-
-  .advantages__item:hover svg.focus-visible:focus {
-    fill: #00b2ff;
-  }
-
-  .advantages__item:hover svg.focus-visible:focus {
-    fill: #00b2ff;
+  .advantages__item:hover h3.focus-visible:focus.focus-visible:focus,
+  .advantages__item:hover p.focus-visible:focus.focus-visible:focus {
+    opacity: 0.8;
   }
 
   .advantages__wrapper p {
@@ -2325,16 +2297,14 @@ button,
     opacity: 0.8;
   }
 
-  .advantages__item:hover:hover:not(.focus-visible) {
-    background-color: rgba(255, 255, 255, 0);
+  .advantages__item:hover h3:hover:not(.focus-visible),
+  .advantages__item:hover p:hover:not(.focus-visible) {
+    color: #041827;
   }
 
-  .advantages__item:hover.focus-visible:focus:hover:not(.focus-visible) {
-    opacity: 1;
-  }
-
-  .advantages__item:hover svg:hover:not(.focus-visible) {
-    fill: #00b2ff;
+  .advantages__item:hover h3.focus-visible:focus:hover:not(.focus-visible),
+  .advantages__item:hover p.focus-visible:focus:hover:not(.focus-visible) {
+    opacity: 0.8;
   }
 
   .about__loader-btn:hover:hover:not(.focus-visible) {
@@ -2430,6 +2400,25 @@ button,
 
   .modal-form__btn:hover:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+}
+
+@media (hover: hover) and (max-width: 1023.5px) and (hover: hover) {
+  .advantages__item:hover:hover:not(.focus-visible):hover:not(.focus-visible) {
+    fill: #00b2ff;
+    background-color: #ffffff;
+  }
+}
+
+@media (hover: hover) and (max-width: 1023.5px) {
+  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
+    fill: #00b2ff;
+    background-color: #ffffff;
+  }
+
+  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
+    fill: #00b2ff;
+    background-color: #ffffff;
   }
 }
 
@@ -2552,14 +2541,14 @@ button,
     min-height: 325px;
   }
 
+  .advantages__item h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .advantages__item svg {
     width: 30px;
     height: 30px;
-  }
-
-  .advantages__title {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   .advantages__wrapper p {
@@ -2865,13 +2854,21 @@ button,
   }
 
   .advantages__item:hover:hover:not(.focus-visible) {
-    color: #f2f5f7;
     background-color: #00b2ff;
     border: 1px solid #ebebeb;
   }
 
-  .advantages__item:hover svg:hover:not(.focus-visible) {
-    opacity: 1;
+  .advantages__item:hover:hover:not(.focus-visible) svg {
+    fill: #f2f5f7;
+  }
+
+  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
+    opacity: 0.8;
+  }
+
+  .advantages__item:hover h3:hover:not(.focus-visible),
+  .advantages__item:hover p:hover:not(.focus-visible) {
+    color: #f2f5f7;
   }
 
   .about__loader-btn:hover:hover:not(.focus-visible) {
@@ -2902,14 +2899,6 @@ button,
     fill: #00b2ff;
   }
 
-  .social__link:focus:hover:not(.focus-visible) {
-    outline: 1px solid #f2f5f7;
-  }
-
-  .social__link:active:hover:not(.focus-visible) {
-    outline: 2px solid #f2f5f7;
-  }
-
   .footer-contacts__phone .phone__link:hover:hover:not(.focus-visible) {
     color: #00b2ff;
   }
@@ -2922,5 +2911,11 @@ button,
   .modal-form__btn:hover:hover:not(.focus-visible) {
     background-color: #f2f5f7;
     color: #041827;
+  }
+}
+
+@media (hover: hover) and (hover: hover) {
+  .advantages__item:hover:hover:not(.focus-visible):hover:not(.focus-visible) {
+    opacity: 0.8;
   }
 }

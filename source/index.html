@@ -197,7 +197,7 @@
           <div class="consult__form-wrapper">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p> Мы проконсультируем Вас бесплатно</p>
-            <form class="consult__form consult-form">
+            <form class="consult__form consult-form" action="#" method="post">
               <ul class="consult-form__list">
                 <li class="consult-form__item">
                   <label for="user-name" class="visually-hidden">Имя.</label>
@@ -206,8 +206,8 @@
                 </li>
                 <li class="consult-form__item">
                   <label class="visually-hidden">Телефон.</label>
-                  <input type="tel" name="user-phone" placeholder="Телефон" minlength="17" maxlength="17" title="Используйте формат +7(999) 999-99-99" data-tel-input
-                    required>
+                  <input type="tel" name="user-phone" placeholder="Телефон" minlength="17" maxlength="17"
+                    title="Используйте формат +7(999) 999-99-99" data-tel-input required>
                 </li>
               </ul>
               <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
@@ -335,15 +335,17 @@
         <div class="modal__content modal-consult">
           <h2>Закажите звонок</h2>
           <p> Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form class="modal-consult__form modal-form">
+          <form class="modal-consult__form modal-form" action="#" method="post">
             <ul class="modal-form__list">
               <li class="modal-form__item">
                 <label for="user-name-modal" class="visually-hidden">Имя.</label>
-                <input type="text" name="user-name-modal" id="user-name-modal" placeholder="Имя" maxlength="25" data-focus required>
+                <input type="text" name="user-name-modal" id="user-name-modal" placeholder="Имя" maxlength="25"
+                  data-focus required>
               </li>
               <li class="modal-form__item">
                 <label class="visually-hidden">Телефон.</label>
-                <input type="tel" name="user-phone-modal" placeholder="Телефон" minlength="17" maxlength="17" title="Используйте формат +7(999) 999-99-99" data-tel-input required>
+                <input type="tel" name="user-phone-modal" placeholder="Телефон" minlength="17" maxlength="17"
+                  title="Используйте формат +7(999) 999-99-99" data-tel-input required>
               </li>
               <li class="modal-form__item">
                 <textarea name="question" id="question-modal" placeholder="Ваш вопрос"></textarea>
@@ -365,9 +367,8 @@
         </div>
       </div>
     </div>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
   </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
-
 </html>

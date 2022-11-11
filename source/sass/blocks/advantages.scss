@@ -68,56 +68,7 @@
   }
 }
 
-.advantages__item:hover {
-  @include hover {
-    color: $color-alice-blue;
-    background-color: $color-deep-sky-blue;
-    border: 1px solid #ebebeb;
-  }
-
-  @include vp-1023 {
-    @include hover-focus {
-      background-color: $color-transparent;
-    }
-
-    &.focus-visible:focus {
-      background-color: $color-transparent;
-
-      @include hover-focus {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.advantages__item svg {
-  fill: $color-deep-sky-blue;
-
-  @include vp-767 {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item:hover svg {
-  fill: $color-alice-blue;
-
-  @include vp-1023 {
-    @include hover-focus {
-      fill: $color-deep-sky-blue;
-    }
-
-    &.focus-visible:focus {
-      fill: $color-deep-sky-blue;
-    }
-  }
-
-  @include hover-focus {
-    opacity: 1;
-  }
-}
-
-.advantages__title {
+.advantages__item h3 {
   margin: 10px 0 0;
   font-family: $ff-titles;
   font-weight: 400;
@@ -128,6 +79,90 @@
   @include vp-767 {
     font-size: 20px;
     line-height: 32px;
+  }
+}
+
+// .advantages__item:hover {
+//   @include hover {
+//     color: $color-alice-blue;
+//     background-color: $color-deep-sky-blue;
+//     border: 1px solid #ebebeb;
+//   }
+
+//   @include vp-1023 {
+//     @include hover-focus {
+//       background-color: $color-default-white;
+//     }
+
+//     &.focus-visible:focus {
+//       background-color: $color-default-white;
+
+//       @include hover-focus {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
+
+.advantages__item svg {
+  fill: $color-deep-sky-blue;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantages__item:hover {
+  @include hover {
+    background-color: $color-deep-sky-blue;
+    border: 1px solid #ebebeb;
+
+    svg {
+      fill: $color-alice-blue;
+    }
+
+    h3,
+    p {
+
+    }
+
+    @include vp-1023 {
+      @include hover-focus {
+        fill: $color-deep-sky-blue;
+        background-color: $color-default-white;
+      }
+
+      &.focus-visible:focus {
+        fill: $color-deep-sky-blue;
+        background-color: $color-default-white;
+      }
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.advantages__item:hover h3,
+.advantages__item:hover p {
+  @include hover {
+    color: $color-alice-blue;
+  }
+
+  @include vp-1023 {
+    @include hover-focus {
+      color: $color-black-pearl;
+    }
+
+    &.focus-visible:focus {
+      color: $color-black-pearl;
+
+      @include hover-focus {
+        opacity: 0.8;
+      }
+    }
   }
 }
 
