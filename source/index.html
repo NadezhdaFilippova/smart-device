@@ -22,8 +22,14 @@
             <div class="main-header__wrapper">
               <a class="main-header__logo main-logo">
                 <div class="main-logo__img-wrapper">
-                  <img class="main-logo__img" src="img/svg/logo-full.svg" width="215" height="55"
+                  <img class="main-logo__img" src="img/svg/logo-shortcut.svg" width="55" height="55"
                     alt="Лoготип Smart Device, , похожий на мозг из проводов.">
+                  <div class="main-logo__text">
+                    <span class="main-logo__title">Smart Device</span>
+                    <span class="main-logo__subtitle">умные технологии</span>
+                  </div>
+                  <!-- <img class="main-logo__img" src="img/svg/logo-full.svg" width="215" height="55"
+                    alt="Лoготип Smart Device, , похожий на мозг из проводов."> -->
                 </div>
               </a>
               <nav class="main-nav main-header__nav">
@@ -54,11 +60,11 @@
         <div class="intro__container">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="intro__consult-btn intro__consult-btn--desktop" href="#form" data-scroll-to-form>Получить
-            бесплатную
-            консультацию</a>
-          <a class="intro__consult-btn intro__consult-btn--mobile" href="#form" data-scroll-to-form>Бесплатная
-            консультация</a>
+          <a class="intro__consult-btn " href="#form" data-scroll-to-form><span
+              class="intro__consult-text--desktop">Получить бесплатную консультацию</span><span
+              class="intro__consult-text--mobile">Бесплатная консультация</span></a>
+          <!-- <a class="intro__consult-btn intro__consult-btn--mobile" href="#form" data-scroll-to-form>Бесплатная
+            консультация</a> -->
         </div>
       </section>
     </div>
@@ -185,8 +191,8 @@
           </ul>
         </div>
       </section>
-      <section class="consult" id="scroll">
-        <div class="consult__wrapper container" id="form" data-form>
+      <section class="consult" id="form">
+        <div class="consult__wrapper container" data-form>
           <div class="consult__img-wrapper">
             <picture>
               <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
@@ -371,4 +377,5 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

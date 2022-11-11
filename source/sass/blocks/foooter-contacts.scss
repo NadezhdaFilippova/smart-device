@@ -25,7 +25,6 @@
 
 .footer-contacts__address address,
 .footer-contacts__phone .phone__link {
-  margin-bottom: 10px;
   font-family: $ff-main;
   font-style: normal;
   font-weight: 400;
@@ -40,6 +39,8 @@
 }
 
 .footer-contacts__address address {
+  margin-bottom: 10px;
+
   @include vp-1023 {
     margin-bottom: 12px;
   }
@@ -49,10 +50,8 @@
   }
 }
 
-.footer-contacts__phone .phone__link {
-  @include vp-767 {
-    margin-bottom: 10px;
-  }
+.footer-contacts__phone .footer-contacts__item {
+  margin-bottom: 10px;
 }
 
 .footer-contacts__phone {

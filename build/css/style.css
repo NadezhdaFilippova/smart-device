@@ -773,10 +773,46 @@ button,
 }
 
 .main-logo {
-  max-width: 215px;
+  min-width: 215px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+
+.main-logo__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-logo__img {
+  margin-right: 15px;
+}
+
+.main-logo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #f2f5f7;
+}
+
+.main-logo__title {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.main-logo__subtitle {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .main-header__container {
@@ -956,7 +992,7 @@ button,
   border-radius: 3px;
 }
 
-.intro__consult-btn--mobile {
+.intro__consult-text--mobile {
   display: none;
 }
 
@@ -1192,7 +1228,7 @@ button,
   justify-content: space-between;
   width: 64%;
   margin: 0 auto;
-  padding: 170px 0 248px;
+  padding: 170px 0 224px;
   color: #ffffff;
 }
 
@@ -1220,7 +1256,7 @@ button,
 }
 
 .consult__img {
-  margin-top: 16px;
+  margin-top: 77px;
   margin-right: 10.2%;
   -o-object-fit: contain;
   object-fit: contain;
@@ -1614,13 +1650,20 @@ button,
 
 .footer-contacts__address address,
 .footer-contacts__phone .phone__link {
-  margin-bottom: 10px;
   font-family: "PT Mono", "Arial", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contacts__address address {
+  margin-bottom: 10px;
+}
+
+.footer-contacts__phone .footer-contacts__item {
+  margin-bottom: 10px;
 }
 
 .footer-contacts__phone {
@@ -1945,21 +1988,6 @@ button,
   .advantages__item {
     min-height: 360px;
     padding: 40px 44px 15px 40px;
-  }
-
-  .advantages__item:hover h3.focus-visible:focus,
-  .advantages__item:hover p.focus-visible:focus {
-    color: #041827;
-  }
-
-  .advantages__item:hover h3.focus-visible:focus,
-  .advantages__item:hover p.focus-visible:focus {
-    color: #041827;
-  }
-
-  .advantages__item:hover h3.focus-visible:focus.focus-visible:focus,
-  .advantages__item:hover p.focus-visible:focus.focus-visible:focus {
-    opacity: 0.8;
   }
 
   .advantages__wrapper p {
@@ -2297,16 +2325,6 @@ button,
     opacity: 0.8;
   }
 
-  .advantages__item:hover h3:hover:not(.focus-visible),
-  .advantages__item:hover p:hover:not(.focus-visible) {
-    color: #041827;
-  }
-
-  .advantages__item:hover h3.focus-visible:focus:hover:not(.focus-visible),
-  .advantages__item:hover p.focus-visible:focus:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
   .about__loader-btn:hover:hover:not(.focus-visible) {
     background-color: rgba(255, 255, 255, 0);
     color: #00b2ff;
@@ -2404,21 +2422,24 @@ button,
 }
 
 @media (hover: hover) and (max-width: 1023.5px) and (hover: hover) {
-  .advantages__item:hover:hover:not(.focus-visible):hover:not(.focus-visible) {
+  .advantages__item:hover:not(.focus-visible):hover:not(.focus-visible) {
     fill: #00b2ff;
     background-color: #ffffff;
+    color: #041827;
   }
 }
 
 @media (hover: hover) and (max-width: 1023.5px) {
-  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
+  .advantages__item:hover:not(.focus-visible).focus-visible:focus {
     fill: #00b2ff;
     background-color: #ffffff;
+    color: #041827;
   }
 
-  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
+  .advantages__item:hover:not(.focus-visible).focus-visible:focus {
     fill: #00b2ff;
     background-color: #ffffff;
+    color: #041827;
   }
 }
 
@@ -2446,21 +2467,14 @@ button,
     width: 100%;
   }
 
-  .main-logo__img-wrapper {
+  .main-logo__img {
+    margin-right: 0;
     width: 35px;
     height: 35px;
-    overflow: hidden;
-    position: relative;
   }
 
-  .main-logo__img {
+  .main-logo__text {
     display: none;
-    margin: 0;
-    position: absolute;
-    top: 0.3%;
-    height: 35px;
-    left: -3.7%;
-    clip: rect(0 76px 53px 0);
   }
 
   .main-header__container {
@@ -2499,16 +2513,20 @@ button,
   }
 
   .intro__consult-btn {
-    display: none;
-  }
-
-  .intro__consult-btn--mobile {
-    display: block;
     width: 100%;
+    display: block;
     margin: 0;
     padding: 12px 30px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .intro__consult-text--desktop {
+    display: none;
+  }
+
+  .intro__consult-text--mobile {
+    display: block;
   }
 
   .advantages__container {
@@ -2771,10 +2789,6 @@ button,
     margin-bottom: 15px;
   }
 
-  .footer-contacts__phone .phone__link {
-    margin-bottom: 10px;
-  }
-
   .head-container {
     background-image: url("../img/main-back-mobile.jpg");
   }
@@ -2853,22 +2867,22 @@ button,
     color: #00b2ff;
   }
 
-  .advantages__item:hover:hover:not(.focus-visible) {
+  .advantages__item:hover:not(.focus-visible) {
     background-color: #00b2ff;
     border: 1px solid #ebebeb;
   }
 
-  .advantages__item:hover:hover:not(.focus-visible) svg {
+  .advantages__item:hover:not(.focus-visible) svg {
     fill: #f2f5f7;
   }
 
-  .advantages__item:hover:hover:not(.focus-visible).focus-visible:focus {
-    opacity: 0.8;
+  .advantages__item:hover:not(.focus-visible) h3,
+  .advantages__item:hover:not(.focus-visible) p {
+    color: #f2f5f7;
   }
 
-  .advantages__item:hover h3:hover:not(.focus-visible),
-  .advantages__item:hover p:hover:not(.focus-visible) {
-    color: #f2f5f7;
+  .advantages__item:hover:not(.focus-visible).focus-visible:focus {
+    opacity: 0.8;
   }
 
   .about__loader-btn:hover:hover:not(.focus-visible) {
@@ -2915,7 +2929,7 @@ button,
 }
 
 @media (hover: hover) and (hover: hover) {
-  .advantages__item:hover:hover:not(.focus-visible):hover:not(.focus-visible) {
+  .advantages__item:hover:not(.focus-visible):hover:not(.focus-visible) {
     opacity: 0.8;
   }
 }

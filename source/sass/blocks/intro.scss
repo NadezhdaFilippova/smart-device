@@ -89,20 +89,26 @@
   }
 
   @include vp-767 {
-    display: none;
-  }
-}
-
-.intro__consult-btn--mobile {
-  display: none;
-
-  @include vp-767 {
-    display: block;
     width: 100%;
+    display: block;
     margin: 0;
     padding: 12px 30px;
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+.intro__consult-text--desktop {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.intro__consult-text--mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
   }
 }
 
