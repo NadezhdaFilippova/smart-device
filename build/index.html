@@ -198,7 +198,7 @@
           <div class="consult__form-wrapper">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p> Мы проконсультируем Вас бесплатно</p>
-            <form class="consult__form consult-form" action="#" method="post">
+            <form class="consult__form consult-form" action="https://echo.htmlacademy.ru/" method="post">
               <ul class="consult-form__list">
                 <li class="consult-form__item">
                   <label for="user-name" class="visually-hidden">Имя.</label>
@@ -207,7 +207,7 @@
                 </li>
                 <li class="consult-form__item">
                   <label class="visually-hidden">Телефон.</label>
-                  <input type="tel" name="user-phone" placeholder="Телефон" minlength="17" maxlength="17"
+                  <input type="tel" name="user-phone" placeholder="Телефон"  pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="17" maxlength="17"
                     title="Используйте формат +7(999) 999-99-99" data-tel-input required>
                 </li>
               </ul>
