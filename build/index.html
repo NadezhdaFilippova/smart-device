@@ -336,7 +336,7 @@
         <div class="modal__content modal-consult">
           <h2>Закажите звонок</h2>
           <p> Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form class="modal-consult__form modal-form" action="#" method="post">
+          <form class="modal-consult__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <ul class="modal-form__list">
               <li class="modal-form__item">
                 <label for="user-name-modal" class="visually-hidden">Имя.</label>
@@ -345,7 +345,7 @@
               </li>
               <li class="modal-form__item">
                 <label class="visually-hidden">Телефон.</label>
-                <input type="tel" name="user-phone-modal" placeholder="Телефон" minlength="17" maxlength="17"
+                <input type="tel" name="user-phone-modal" placeholder="Телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="17" maxlength="17"
                   title="Используйте формат +7(999) 999-99-99" data-tel-input required>
               </li>
               <li class="modal-form__item">

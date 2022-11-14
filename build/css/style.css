@@ -1809,6 +1809,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #041827;
 }
 
 /* @mixin hover-focus {
