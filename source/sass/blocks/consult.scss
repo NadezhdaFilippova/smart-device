@@ -1,5 +1,5 @@
 .consult {
-  background-image: linear-gradient(139deg, #005b82 33%, #00b3ff 33%, #00b3ff 77%);
+  background-image: linear-gradient(139deg, #005b82 33.5%, #00b3ff 33.5%, #00b3ff 76.5%);
   background-size: contain;
 
   @include vp-1023 {
@@ -10,19 +10,14 @@
 
 .consult__wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 64%;
-  margin: 0 auto;
-  padding: 170px 0 224px;
+  padding: 168px 0 224px;
   color: $color-default-white;
 
   @include vp-1023 {
-    width: 87%;
     padding: 44px 0 125px;
   }
 
   @include vp-767 {
-    width: 84.5%;
     padding: 50px 0 87px;
   }
 }
@@ -56,10 +51,10 @@
 
 .consult p {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @include vp-767 {
@@ -73,6 +68,7 @@
 .consult__img-wrapper {
   height: 285px;
   width: 41.8%;
+  margin-right: 9.7%;
 
   @include vp-1023 {
     display: none;

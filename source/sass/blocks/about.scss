@@ -1,19 +1,15 @@
 .about__wrapper {
-  width: 64%;
-  margin: 0 auto;
   margin-bottom: 120px;
   padding-left: 250px;
   position: relative;
   box-sizing: border-box;
 
   @include vp-1023 {
-    width: 87.53%;
     margin-bottom: 80px;
-    padding-left: 179px;
+    padding-left: 176px;
   }
 
   @include vp-767 {
-    width: 84.8%;
     padding-left: 0;
   }
 }
@@ -24,6 +20,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @include vp-1023 {
+    margin-top: -4px;
+    margin-bottom: 11px;
+  }
 
   @include vp-767 {
     margin-top: 20px;
@@ -41,6 +42,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 18px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -61,6 +63,7 @@
   background-color: $color-transparent;
   color: $color-deep-sky-blue;
   cursor: pointer;
+  user-select: none;
 
   @include vp-767 {
     width: 160px;
@@ -115,6 +118,11 @@
   height: 320px;
   top: 0;
   left: 0;
+
+  @include vp-1023 {
+    top: 4px;
+    left: -4px;
+  }
 
   @include vp-767 {
     display: none;

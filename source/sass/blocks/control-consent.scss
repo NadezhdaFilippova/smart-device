@@ -1,12 +1,16 @@
 .control-consent {
   width: 45%;
 
+  @include vp-1023 {
+    width: 41%;
+  }
+
   @include vp-767 {
     width: 100%;
   }
 }
 
-.control-consent > input[type="checkbox"] {
+.control-consent>input[type="checkbox"] {
   position: absolute;
 
   width: 1px;
@@ -31,9 +35,18 @@
   line-height: 16px;
   text-align: left;
   cursor: pointer;
+
+  @include vp-1023 {
+    padding-top: 5px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    padding-left: 30px;
+  }
 }
 
-.control-consent > input[type="checkbox"] + .control-consent__label::before {
+.control-consent>input[type="checkbox"]+.control-consent__label::before {
   content: "";
   position: absolute;
   top: 25%;
@@ -42,9 +55,18 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+
+  @include vp-1023 {
+    top: 36%;
+  }
+
+  @include vp-767 {
+    top: 20%;
+    left: 5px;
+  }
 }
 
-.control-consent > input[type="checkbox"]:checked + .control-consent__label::after {
+.control-consent>input[type="checkbox"]:checked+.control-consent__label::after {
   position: absolute;
   top: 25%;
   left: -1%;
@@ -53,13 +75,22 @@
   background: $color-default-white;
   clip-path: polygon(26% 40%, 52% 71%, 83% 26%, 87% 31%, 52% 82%, 20% 44%);
   content: "";
+
+  @include vp-1023 {
+    top: 36%;
+  }
+
+  @include vp-767 {
+    top: 20%;
+    left: 2px;
+  }
 }
 
-.control-consent:hover > input[type="checkbox"] + .control-consent__label::before {
-  border: 2px solid $color-black-pearl;
+.control-consent:hover > .control-consent__label {
+  text-decoration: underline;
 }
 
-.control-consent:focus > input[type="checkbox"] + .control-consent__label::before {
-  outline: 2px solid $color-black-pearl;
-  border: 1px solid $color-black-pearl;
+.control-consent>input[type="checkbox"]:focus+.control-consent__label::before {
+  outline: 4px solid $color-alice-blue;
 }
+

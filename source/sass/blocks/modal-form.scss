@@ -1,5 +1,5 @@
 .modal-form {
-  width: 100%;
+  width: 420px;
 }
 
 .modal-form__list {
@@ -21,7 +21,7 @@
 
 .modal-form__item textarea {
   padding: 25px 15px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   height: 155px;
 }
 
@@ -31,6 +31,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+  letter-spacing: 1.5px;
 }
 
 .modal-form__item input:hover,
@@ -68,6 +69,8 @@
   background-color: $color-black-pearl;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .modal-form__btn:hover {
@@ -110,9 +113,15 @@
 
 .modal-form__control-consent > input[type="checkbox"] + .control-consent__label::before {
   top: 0;
+  left: 9px;
 }
 
 .modal-form__control-consent > input[type="checkbox"]:checked + .control-consent__label::after {
   top: 0;
-  left: -0.5%;
+  left: 9px;
+}
+
+
+.modal-form__footer .control-consent__label {
+  padding-left: 37px;
 }
