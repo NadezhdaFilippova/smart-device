@@ -680,7 +680,7 @@ button,
 
 .modal__content {
   position: relative;
-  top: -239px;
+  top: 4.4%;
   left: -8px;
   width: 500px;
   padding: 40px;
@@ -733,6 +733,7 @@ button,
 
 .modal--fit-content .modal__content {
   width: auto;
+  min-height: 610px;
 }
 
 .modal--no-scale {
@@ -760,6 +761,7 @@ button,
   display: block;
   max-width: 400px;
   margin: 0;
+  margin-bottom: 3px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -770,13 +772,12 @@ button,
   display: block;
   max-width: 400px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .main-logo {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .main-logo__img-wrapper {
@@ -828,7 +829,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 62%;
+  width: 60%;
   line-height: 18px;
 }
 
@@ -836,8 +837,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 11px 0;
-  margin-top: -2px;
+  padding: 5px 0 11px 0;
   color: #f2f5f7;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -853,7 +853,6 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  letter-spacing: 0.5px;
 }
 
 .contacts__link svg {
@@ -894,7 +893,10 @@ button,
 .main-nav__button {
   display: block;
   width: 160px;
+  margin-top: 4px;
   padding: 11px 15px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1570,7 +1572,6 @@ button,
 
 .main-footer__logo {
   margin-bottom: 29px;
-  margin-left: -26px;
 }
 
 .main-footer__contacts {
@@ -1721,7 +1722,7 @@ button,
 
 .modal-form__item textarea {
   padding: 25px 15px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   height: 155px;
 }
 
@@ -2288,6 +2289,7 @@ button,
 
   .main-footer__logo {
     margin-bottom: 0;
+    margin-left: -24px;
   }
 
   .main-footer__contacts {

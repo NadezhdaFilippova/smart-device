@@ -11,7 +11,6 @@
 }
 
 .main-nav__contacts {
-
   @include vp-1023 {
     margin-right: 0;
   }
@@ -20,7 +19,9 @@
 .main-nav__button {
   display: block;
   width: 160px;
+  margin-top: 4px;
   padding: 11px 15px;
+  align-self: flex-start;
   font-family: $ff-titles;
   font-weight: 700;
   font-size: 14px;

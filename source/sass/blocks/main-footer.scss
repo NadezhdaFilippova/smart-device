@@ -70,10 +70,10 @@
 
 .main-footer__logo {
   margin-bottom: 29px;
-  margin-left: -26px;
 
   @include vp-1023 {
     margin-bottom: 0;
+    margin-left: -24px;
   }
 
   @include vp-767 {
