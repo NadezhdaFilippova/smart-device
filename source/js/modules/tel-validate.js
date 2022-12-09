@@ -2,7 +2,7 @@ const phoneInputs = document.querySelectorAll('input[data-tel-input]');
 
 const setPhoneMak = () => {
   const getInputNumbersValue = (input) => {
-    return input.value.replace(/\D/g, '');
+    return input.value.replace(/\D/, '');
   };
 
   const onPhoneInput = (e) => {
